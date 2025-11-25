@@ -30,8 +30,9 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
+	--gray-gradient: to bottom, #000 0%, #888 100%;
+  background: linear-gradient(var(--gray-gradient)) no-repeat;
+  background-size: 100%  var(--gradient-height, 410px);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(158, 158, 158);
