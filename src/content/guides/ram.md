@@ -1,7 +1,9 @@
 ---
+layout: ../layouts/Guide.astro
 title: 'Upgrade or Replace RAM'
 description: 'A guide on how to upgrade or replace the ram in your computer.'
 pubDate: 'Nov 17 2025'
+current: "guide"
 ---
 
 ## Headings
