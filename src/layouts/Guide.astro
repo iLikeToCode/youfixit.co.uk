@@ -7,7 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'guides'>['data'];
-
+const {current = null} = Astro.props;
 const { title, description, pubDate, updatedDate, heroImage} = Astro.props;
 ---
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		<style>
 			main {
-				width: calc(100% - 2em);
+				width: calc(100% - 1rem);
 				max-width: 100%;
 				margin: 0;
 			}
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				box-shadow: var(--box-shadow);
 			}
 			.prose {
-				width: 720px;
+				width: calc(100% - 40rem);
 				max-width: calc(100% - 2em);
 				margin: auto;
 				padding: 1em;
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	</head>
 
 	<body>
-		<Header />
+		<Header current={current}/>
 		<main>
 			<article>
 				<div class="prose">
