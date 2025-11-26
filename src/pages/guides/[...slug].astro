@@ -1,7 +1,7 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import Guide from '../../layouts/Guide.astro';
-
+import Header from '../../components/Header.astro'; //
 export async function getStaticPaths() {
 	const posts = await getCollection('guides');
 	return posts.map((post) => ({
@@ -13,8 +13,11 @@ type Props = CollectionEntry<'guides'>;
 
 const post = Astro.props;
 const { Content } = await render(post);
+const current = "guide";
 ---
 
 <Guide {...post.data}>
 	<Content />
 </Guide>
+
+<Header current={current}/>
