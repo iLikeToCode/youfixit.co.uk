@@ -6,7 +6,7 @@ import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
-
+const current = "guide";
 const posts = (await getCollection('guides')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
@@ -15,6 +15,7 @@ const posts = (await getCollection('guides')).sort(
 <!doctype html>
 <html lang="en">
 	<head>
+	 <link rel="icon" type="image/x-icon" href="public/YouFixItFavicon.png">
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
@@ -44,16 +45,21 @@ const posts = (await getCollection('guides')).sort(
 			}
 			.title {
 				margin: 0;
-				color: rgb(var(--black));
+				color: rgb(var(--accent));
 				line-height: 1;
 			}
 			.date {
 				margin: 0;
 				color: rgb(var(--gray));
 			}
+
+
 			ul li a:hover h4,
 			ul li a:hover .date {
-				color: rgb(var(--accent));
+				color: rgba(156, 169, 243, 1)
+			}
+			ul li a:hover .date {
+				color: rgb(var(--gray));
 			}
 			ul a:hover img {
 				box-shadow: var(--box-shadow);
@@ -76,7 +82,7 @@ const posts = (await getCollection('guides')).sort(
 		</style>
 	</head>
 	<body>
-		<Header />
+		<Header current = {current}/>
 		<main>
 			<section>
 				<ul>
