@@ -34,5 +34,4 @@ If the battery is removable, take it out before starting.
 Turn the laptop upside down and locate the screws securing the bottom cover.
 
 ### Example Image
-```markdown
-![Removing bottom cover screws](./images/remove.svg)
+![Removing bottom cover screws](/images/remove.svg)
