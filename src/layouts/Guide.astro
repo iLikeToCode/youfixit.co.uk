@@ -13,7 +13,7 @@ const { title, description, pubDate, updatedDate, heroImage} = Astro.props;
 
 <html lang="en">
 	<head>
-	 <link rel="icon" type="image/x-icon" href="public/YouFixItFavicon.png">
+	 <link rel="icon" type="image/x-icon" href="YouFixItFavicon.png">
 		<BaseHead title={title} description={description} />
 		<script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		<style>
 			main {
-				width: calc(100% - 1rem);
-				max-width: 100%;
-				margin: 0;
+			width: 100%;
+    		margin: 0;
+    		padding: 0;
 			}
 			.hero-image {
 				width: 100%;
@@ -41,8 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
 				box-shadow: var(--box-shadow);
 			}
 			.prose {
-				width: calc(100% - 40rem);
-				max-width: calc(100% - 2em);
+				max-width: 1350px;
+				margin: 0 auto;
+				padding: 1em;
 				margin: auto;
 				padding: 1em;
 				color: rgb(var(--gray-dark));

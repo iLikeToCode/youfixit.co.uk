@@ -1,209 +1,68 @@
 ---
 layout: ../layouts/Guide.astro
-title: 'Upgrade or Replace RAM'
-description: 'A guide on how to upgrade or replace the ram in your computer.'
+title: 'Upgrade or Replace RAM in a Lenovo Laptop'
+description: 'Step-by-step instructions for safely upgrading or replacing RAM in a typical Lenovo laptop.'
 pubDate: 'Nov 17 2025'
 current: "guide"
 ---
 
-## Headings
+## Introduction
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+Upgrading your laptop’s RAM is one of the easiest ways to improve performance, increase multitasking capability, and extend the useful life of your device.  
+This guide walks you through the general steps for replacing or installing RAM in most Lenovo laptops.  
+**Your model may vary**, so check your device’s hardware manual if something looks different.
 
-# H1
+---
 
-## H2
+# Before You Begin
 
-### H3
+## Tools Needed
 
-#### H4
+- Small Phillips screwdriver  
+- Plastic pry tool  
+- Anti-static wrist strap (recommended)
 
-##### H5
+## Safety
 
-###### H6
+Always power down the device, unplug the charger, and disconnect external accessories.  
+If the battery is removable, take it out before starting.
 
-## Paragraph
+---
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+# Step 1 — Power Off and Remove the Bottom Cover
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+Before opening the laptop, make sure it is fully powered down and safe to work on.
 
-## Images
 
-### Syntax
+![Disconnect Accessories](/images/remove.svg)
 
-```markdown
-![Alt text](./full/or/relative/path/of/image)
-```
 
-## Blockquotes
+## Prepare the Laptop
+- Shut down the laptop completely (do not use Sleep or Hibernate).
+- Unplug the power adapter and disconnect all accessories.
+- Hold the power button for 5–10 seconds to discharge any remaining power.
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+> ⚠️ **Warning:** Opening the laptop while it is still powered or connected to electricity can damage internal components.
 
-### Blockquote without attribution
+If your Lenovo laptop includes a removable battery:
+- Slide the locking latches to release the battery.
+- Remove the battery and set it aside.
 
-#### Syntax
+> 💡 **Note:** Some Lenovo models require disabling the internal battery through BIOS.  
+> Look for **“Disable Internal Battery”** under the Power menu if applicable.
 
-```markdown
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-```
+---
 
-#### Output
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
+![Removing bottom cover screws](/images/remove.svg)
 
-### Blockquote with attribution
 
-#### Syntax
+## Remove the Bottom Cover
+- Turn the laptop upside down and place it on a soft, non-conductive surface.
+- Locate and remove all screws securing the bottom cover.
+- Keep the screws organized—many Lenovo models use multiple screw lengths.
+- Insert a plastic pry tool into the corner seam.
+- Gently work your way around the edges to release the internal clips.
+- Lift the bottom cover off and set it aside.
 
-```markdown
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-```
-
-#### Output
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-### Syntax
-
-```markdown
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-```
-
-### Output
-
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-
-## Code Blocks
-
-### Syntax
-
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
-
-````markdown
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-````
-
-### Output
-
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-
-## List Types
-
-### Ordered List
-
-#### Syntax
-
-```markdown
-1. First item
-2. Second item
-3. Third item
-```
-
-#### Output
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-#### Syntax
-
-```markdown
-- List item
-- Another item
-- And another item
-```
-
-#### Output
-
-- List item
-- Another item
-- And another item
-
-### Nested list
-
-#### Syntax
-
-```markdown
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-```
-
-#### Output
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-### Syntax
-
-```markdown
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-```
-
-### Output
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+> ⚠️ **Caution:** Avoid using metal tools. They can bend the chassis or scratch the finish.
