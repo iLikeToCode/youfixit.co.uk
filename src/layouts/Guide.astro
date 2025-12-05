@@ -16,13 +16,16 @@ const { title, description, pubDate, updatedDate, heroImage} = Astro.props;
 	 <link rel="icon" type="image/x-icon" href="YouFixItFavicon.png">
 		<BaseHead title={title} description={description} />
 		<script>
-document.addEventListener("DOMContentLoaded", () => {
+function updateGradientHeight() {
   const hr = document.querySelector("hr");
-  if (!hr) return;  
+  if (!hr) return;
 
   const offset = hr.getBoundingClientRect().top + window.scrollY;
   document.documentElement.style.setProperty("--gradient-height", offset + "px");
-});
+}
+
+document.addEventListener("DOMContentLoaded", updateGradientHeight);
+window.addEventListener("resize", updateGradientHeight);
 </script>
 
 		<style>
