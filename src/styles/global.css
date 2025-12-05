@@ -30,7 +30,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	--gray-gradient: to bottom, #6d6d6d 0%, #000000 100%;
+	--gray-gradient: to bottom, #000000 0%, #636363 100%;
   background: linear-gradient(var(--gray-gradient)) no-repeat;
   background-size: 100%  var(--gradient-height, 410px);
 	word-wrap: break-word;
@@ -78,7 +78,7 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: white;
 }
 a:hover {
 	color: var(--accent);

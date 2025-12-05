@@ -1,0 +1,234 @@
+---
+layout: ../layouts/Guide.astro
+title: "Upgrade or Replace RAM in a Lenovo Laptop"
+description: "Step-by-step instructions for safely upgrading or replacing RAM in a typical Lenovo laptop."
+pubDate: "Nov 17 2025"
+current: "guide"
+---
+
+<article>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <h2>Introduction</h2>
+    <p>
+      Upgrading your laptop’s RAM is one of the easiest ways to improve performance,
+      increase multitasking capability, and extend the useful life of your device.
+      This guide walks you through the general steps for replacing or installing RAM in most Lenovo laptops.
+    </p>
+
+    <p><strong>Your model may vary</strong>, so check your device’s hardware manual if something looks different.</p>
+  </section>
+
+  <hr />
+
+  <!-- BEFORE YOU BEGIN -->
+  <section class="section-block">
+    <h1>Before You Begin</h1>
+
+    <div class="two-col">
+      <div>
+        <h2>Tools Needed</h2>
+        <ul>
+          <li>Small Phillips screwdriver</li>
+          <li>Plastic pry tool</li>
+          <li>Anti-static wrist strap (recommended)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Safety</h2>
+        <p>
+          Always power down the device, unplug the charger, and disconnect all external accessories.
+          If the battery is removable, take it out before starting.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- STEP 1 -->
+  <section class="step-title">
+    <h1>Step 1 — Power Off and Remove the Bottom Cover</h1>
+    <p>Before opening the laptop, make sure it is fully powered down and safe to work on.</p>
+  </section>
+
+  <step>
+    <img src="/images/remove.svg" alt="Disconnect accessories" />
+    <div class="step-content">
+
+      <h3>Prepare the Laptop</h3>
+      <ul>
+        <li>Shut down the laptop completely (avoid Sleep or Hibernate).</li>
+        <li>Unplug the power adapter and disconnect all accessories.</li>
+        <li>Hold the power button for 5–10 seconds to discharge remaining power.</li>
+      </ul>
+
+      <danger>
+        Opening the laptop while it still has power can damage internal components.
+      </danger>
+
+      <p><strong>If your model has a removable battery:</strong></p>
+      <ul>
+        <li>Slide open the locking latches.</li>
+        <li>Remove the battery and set it aside.</li>
+      </ul>
+
+      <note>
+        Some Lenovo models require disabling the internal battery in BIOS.  
+        Look for <strong>"Disable Internal Battery"</strong> under the Power menu.
+      </note>
+
+    </div>
+  </step>
+
+  <hr />
+
+  <!-- STEP 2 -->
+  <step>
+    <img src="/images/remove.svg" alt="Removing bottom cover screws" />
+    <div class="step-content">
+
+      <h3>Remove the Bottom Cover</h3>
+      <ul>
+        <li>Turn the laptop upside down and place it on a soft, non-conductive surface.</li>
+        <li>Locate and remove all screws securing the bottom cover.</li>
+        <li>Keep screws organized — lengths may vary by model.</li>
+        <li>Insert a plastic pry tool into a corner seam.</li>
+        <li>Work around the edges to release the internal clips.</li>
+        <li>Lift the cover off and set it aside.</li>
+      </ul>
+
+      <danger>
+        Avoid using metal tools — they can bend the chassis or scratch the finish.
+      </danger>
+
+    </div>
+  </step>
+
+</article>
+
+<style>
+  /* GENERAL PAGE LAYOUT -------------------------------------------------- */
+  article {
+    color: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1rem;
+    line-height: 1.7;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    margin: 2.5rem 0;
+  }
+
+  .intro p {
+    margin-bottom: 1rem;
+  }
+
+  .section-block {
+    margin-bottom: 2rem;
+  }
+
+  /* TWO COLUMN LAYOUT -------------------------------------------------- */
+  .two-col {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .two-col > div {
+    flex: 1;
+  }
+
+  /* STEP BLOCK LAYOUT -------------------------------------------------- */
+  step {
+    display: flex;
+    gap: 2rem;
+    margin: 2.5rem 0;
+    align-items: flex-start;
+  }
+
+  step img {
+    width: 260px;
+    max-width: 40%;
+    border-radius: 8px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  .step-content h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .step-content ul {
+    margin-bottom: 1.2rem;
+  }
+
+  .step-title {
+    margin-bottom: 1rem;
+  }
+
+  /* CALLOUT BOXES -------------------------------------------------- */
+  danger, note {
+    display: block;
+    padding: 1rem 1.2rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+  }
+
+  danger {
+    background: rgba(255, 50, 50, 0.18);
+    border-left: 6px solid #ff3434;
+  }
+
+  note {
+    background: rgba(0, 140, 255, 0.18);
+    border-left: 6px solid #2d9cff;
+  }
+
+  /* RESPONSIVE -------------------------------------------------- */
+  @media (max-width: 800px) {
+    .two-col {
+      flex-direction: column;
+    }
+
+    step {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    step img {
+      max-width: 60%;
+    }
+
+    .step-content {
+      text-align: left;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 450px) {
+    step img {
+      max-width: 80%;
+    }
+  }
+</style>
+
+<!--
+Why is this bit one step when it has 2 distinct actions?
+
+The markdown isn't being given explicit structure from the headings which means it's difficult to more complex layouts like having the image next to the thing being discussed. This is a limitation of most MD renders but i think some can do it.
+
+
+Do you have access to the 
+:::danger
+Bad stuff might happen syntax? Can you get it?
+:::
+
+
+I installed a spell checker (it might be set to US)
+-->
